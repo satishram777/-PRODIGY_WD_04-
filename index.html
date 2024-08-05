@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="profile.png">
+    <link rel="stylesheet" href="style.css">
+    <title>SATISH Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio Website</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, it's Me</h3>
+            <h1>SATISH</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/satish-345207296" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/satishram777" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/its__satish_7?igsh=ZjduN2l3amV6YWMx" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="image.png" alt="home-img">
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image.png" alt="About Image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Web Developer</h3>
+            <p>I am a 20-year-old web developer with a strong background in computer science and a passion for building interactive web applications. I have a degree in B.Tech (CSE) from Amity University. My professional experience includes working with various web technologies and collaborating with teams to deliver high-quality projects.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills" id="skill">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bxl-html5'></i>
+                <h3>HTML Structure</h3>
+                <p>HTML, or Hypertext Markup Language, is the standard language used to create and design web pages.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-css3'></i>
+                <h3>CSS Designing</h3>
+                <p>CSS, or Cascading Style Sheets, is a language used to style and design web pages.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxl-nodejs'></i>
+                <h3>JavaScript</h3>
+                <p>JavaScript is a programming language used for web development. It enables dynamic behavior in web pages.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="mailto:satishhuple@gmail.com" onsubmit="return validateForm()" method="post" autocomplete="on">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" id="name" name="name" required>
+                <input type="email" placeholder="Email Address" id="email" name="email" required>
+                <span class="error" id="nameerror"></span>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" id="number" name="number" required>
+                <input type="text" placeholder="Subject" id="subject" name="subject" required>
+            </div>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by SATISH | All Rights Reserved.</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
